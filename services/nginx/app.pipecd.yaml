@@ -1,0 +1,13 @@
+apiVersion: pipecd.dev/v1beta1
+kind: KubernetesApp
+spec:
+  name: nginx
+  labels:
+    env: pipecd-local
+  quickSync:
+    prune: true
+  input:
+    namespace: nginx
+    kustomizeVersion: 4.5.7
+    kustomizeOptions:
+      load-restrictor: LoadRestrictionsNone
