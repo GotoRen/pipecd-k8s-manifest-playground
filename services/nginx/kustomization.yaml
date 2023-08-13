@@ -3,4 +3,5 @@ kind: Kustomization
 namespace: nginx
 resources:
   - "./deployment.yaml"
+  - "./namespace.yaml"
   - "./service.yaml"
