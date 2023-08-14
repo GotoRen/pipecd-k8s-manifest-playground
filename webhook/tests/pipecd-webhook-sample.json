@@ -1,0 +1,42 @@
+{
+  "Type": 4,
+  "Metadata": {
+    "deployment": {
+      "id": "4ef56e72-8631-40a3-97db-23cd6af1611b",
+      "application_id": "f3ac7239-6b62-47f7-ac53-e9b841afa1ab",
+      "application_name": "ren510dev",
+      "piped_id": "7f5cc3fb-1fd7-414b-b9e3-0c4feb90ba74",
+      "project_id": "abema-playground",
+      "git_path": {
+        "repo": {
+          "id": "abema-k8s-manifests-playground",
+          "remote": "git@github.com:abema/abema-k8s-manifests-playground.git",
+          "branch": "master"
+        },
+        "path": "gcp/services/ren510dev-test",
+        "config_filename": "app.pipecd.yaml",
+        "url": "https://github.com/abema/abema-k8s-manifests-playground/tree/master/gcp/services/ren510dev-test"
+      },
+      "cloud_provider": "kubernetes-default",
+      "platform_provider": "kubernetes-default",
+      "labels": {
+        "env": "gke-abema-twn-playground",
+        "grafanaDashboardUIDs": "5Aiamcj4k,vxT-RiC4z"
+      },
+      "trigger": {
+        "commit": {
+          "hash": "a420992676ea5e0baafa9e1fdd6819347aa04dff",
+          "message": "Merge pull request #253 from abema/test/eyes-deploy",
+          "author": "Ren",
+          "branch": "master",
+          "url": "https://github.com/abema/abema-k8s-manifests-playground/commit/a420992676ea5e0baafa9e1fdd6819347aa04dff",
+          "created_at": 1691823480
+        },
+        "timestamp": 1691823480
+      },
+      "status_reason": "The deployment has been planned",
+      "created_at": 1691823480,
+      "updated_at": 1691823480
+    }
+  }
+}
