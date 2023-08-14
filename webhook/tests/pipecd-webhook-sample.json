@@ -2,41 +2,40 @@
   "Type": 4,
   "Metadata": {
     "deployment": {
-      "id": "4ef56e72-8631-40a3-97db-23cd6af1611b",
-      "application_id": "f3ac7239-6b62-47f7-ac53-e9b841afa1ab",
-      "application_name": "ren510dev",
-      "piped_id": "7f5cc3fb-1fd7-414b-b9e3-0c4feb90ba74",
-      "project_id": "abema-playground",
+      "id": "33ff32eb-4924-4d6a-b1b6-f581e399af87",
+      "application_id": "3272fc5f-ee51-4894-b5bb-0a02b3cf24e5",
+      "application_name": "nginx",
+      "piped_id": "6bd2b446-ef80-414a-9407-75561e924aa3",
+      "project_id": "quickstart",
       "git_path": {
         "repo": {
-          "id": "abema-k8s-manifests-playground",
-          "remote": "git@github.com:abema/abema-k8s-manifests-playground.git",
-          "branch": "master"
+          "id": "pipecd-k8s-manifest-playground",
+          "remote": "https://github.com/GotoRen/pipecd-k8s-manifest-playground",
+          "branch": "main"
         },
-        "path": "gcp/services/ren510dev-test",
+        "path": "services/nginx",
         "config_filename": "app.pipecd.yaml",
-        "url": "https://github.com/abema/abema-k8s-manifests-playground/tree/master/gcp/services/ren510dev-test"
+        "url": "https://github.com/GotoRen/pipecd-k8s-manifest-playground/tree/main/services/nginx"
       },
       "cloud_provider": "kubernetes-default",
       "platform_provider": "kubernetes-default",
       "labels": {
-        "env": "gke-abema-twn-playground",
-        "grafanaDashboardUIDs": "5Aiamcj4k,vxT-RiC4z"
+        "env": "pipecd-local"
       },
       "trigger": {
         "commit": {
-          "hash": "a420992676ea5e0baafa9e1fdd6819347aa04dff",
-          "message": "Merge pull request #253 from abema/test/eyes-deploy",
-          "author": "Ren",
-          "branch": "master",
-          "url": "https://github.com/abema/abema-k8s-manifests-playground/commit/a420992676ea5e0baafa9e1fdd6819347aa04dff",
-          "created_at": 1691823480
+          "hash": "eeaf074dc187430018340ae2812ebc534a4d700f",
+          "message": "[Fix] kustomization namespace",
+          "author": "GotoRen",
+          "branch": "main",
+          "url": "https://github.com/GotoRen/pipecd-k8s-manifest-playground/commit/eeaf074dc187430018340ae2812ebc534a4d700f",
+          "created_at": 1691935150
         },
-        "timestamp": 1691823480
+        "timestamp": 1691973397
       },
       "status_reason": "The deployment has been planned",
-      "created_at": 1691823480,
-      "updated_at": 1691823480
+      "created_at": 1691973397,
+      "updated_at": 1691973417
     }
   }
 }
