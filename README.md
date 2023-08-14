@@ -4,4 +4,4 @@ K8s manifest for testing PipeCD
 
 ### PipeCD / Piped config
 
-- https://github.com/GotoRen/pipecd
+- https://github.com/pipe-cd/pipecd

@@ -46,5 +46,7 @@ func NewHooks(ctx echo.Context) error {
 	log.Println("[DEBUG] Deployment.CreatedAt", helper.EpochSeconds(webhookData.Metadata.Deployment.CreatedAt).ConvertToISO8601())
 	log.Println("[DEBUG] Deployment.UpdatedAt", helper.EpochSeconds(webhookData.Metadata.Deployment.UpdatedAt).ConvertToISO8601())
 
+	log.Println("--- Job completed ---")
+
 	return nil
 }
