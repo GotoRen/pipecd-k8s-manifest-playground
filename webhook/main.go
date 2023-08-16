@@ -2,6 +2,7 @@ package main
 
 import (
 	"errors"
+	"log"
 	"net/http"
 
 	"github.com/GotoRen/pipecd-k8s-manifest-playground/webhook/internal"
@@ -18,6 +19,6 @@ func main() {
 
 	err := e.Start(addrPort)
 	if err != nil && !errors.Is(err, http.ErrServerClosed) {
-		panic(err)
+		log.Fatal(err)
 	}
 }
