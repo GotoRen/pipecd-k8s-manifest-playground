@@ -1,0 +1,34 @@
+apiVersion: pipecd.dev/v1beta1
+kind: Piped
+spec:
+  projectID: quickstart
+  pipedID: 5a6ce53f-2090-4b61-a508-1a369742919b ## Project name: pipecd-playground
+  pipedKeyData: aHI3ZXVzNXdiY2dmbWJjOGhhbjdnbGxpNDcwemJyM2dlNHZxdnB2d2V5bTVrdjBqc2wK ## Piped Key: hr7eus5wbcgfmbc8han7glli470zbr3ge4vqvpvweym5kv0jsl
+  apiAddress: localhost:8080
+  repositories:
+    - repoId: example
+      remote: https://github.com/GotoRen/pipecd-k8s-manifest-playground
+      branch: main
+  syncInterval: 1m
+  platformProviders:
+    - name: example-kubernetes
+      type: KUBERNETES
+      config:
+        kubeConfigPath: /Users/ren/.kube/config
+  notifications:
+    routes:
+      ### Webhook
+      - name: pipecd-playground-webhook
+        events:
+          - DEPLOYMENT_SUCCEEDED
+          - DEPLOYMENT_FAILED
+          - DEPLOYMENT_CANCELLED
+        labels:
+          env: playground
+        receiver: pipecd-playground-webhook-receiver
+    receivers:
+      - name: pipecd-playground-webhook-receiver
+        webhook:
+          url: http://localhost:8081/api/hooks/services
+          signatureKey: X-Pipecd-Signature
+          signatureValue: pipecd-playground-signature
