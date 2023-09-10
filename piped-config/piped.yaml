@@ -20,9 +20,23 @@ spec:
       ### Webhook
       - name: pipecd-playground-webhook
         events:
-          - DEPLOYMENT_SUCCEEDED
-          - DEPLOYMENT_FAILED
-          - DEPLOYMENT_CANCELLED
+          ## https://pipecd.dev/docs-v0.45.x/user-guide/managing-piped/configuring-notifications/
+          ## https://github.com/pipe-cd/pipecd/blob/master/pkg/model/notificationevent.pb.go#L41-L55
+          - DEPLOYMENT_TRIGGERED ##: 0
+          - DEPLOYMENT_PLANNED ##: 1
+          - DEPLOYMENT_APPROVED ##: 2
+          - DEPLOYMENT_ROLLING_BACK ## 3: ロールバック
+          - DEPLOYMENT_SUCCEEDED ## 4: デプロイ成功
+          - DEPLOYMENT_FAILED ## 5: デプロイ失敗
+          - DEPLOYMENT_CANCELLED ## 6: デプロイキャンセル
+          - DEPLOYMENT_WAIT_APPROVAL ## 7
+          - DEPLOYMENT_TRIGGER_FAILED ## 8
+          - APPLICATION_SYNCED ## 100
+          - APPLICATION_OUT_OF_SYNC ## 101
+          - APPLICATION_HEALTHY ## 200
+          - APPLICATION_UNHEALTHY ## none
+          - PIPED_STARTED ## 300: PipeCD 起動
+          - PIPED_STOPPED ## 301: PipeCD 停止
         labels:
           env: pipecd-playground
         receiver: pipecd-playground-webhook-receiver
