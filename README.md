@@ -1,5 +1,3 @@
-返信が遅くなってしまいすみません。
-
 # pipecd-k8s-manifest-playground
 
 This repository is a Kubernetes manifest for testing PipeCD.
