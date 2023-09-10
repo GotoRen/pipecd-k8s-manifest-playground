@@ -2,16 +2,16 @@ apiVersion: pipecd.dev/v1beta1
 kind: Piped
 spec:
   projectID: quickstart
-  pipedID: 5a6ce53f-2090-4b61-a508-1a369742919b ## Project name: pipecd-playground
-  pipedKeyData: aHI3ZXVzNXdiY2dmbWJjOGhhbjdnbGxpNDcwemJyM2dlNHZxdnB2d2V5bTVrdjBqc2wK ## Piped Key: hr7eus5wbcgfmbc8han7glli470zbr3ge4vqvpvweym5kv0jsl
+  pipedID: c76d43be-8776-4f76-82c4-d8899ebb71b7 ## Project name: pipecd-playground
+  pipedKeyData: OXB6NXhpeTAwOHJwdjJ6anVmY3ZvOWI4OWt5dXV4NHVsMDVocjluNjcyNnZ3ZXZiZXQK ## Piped Key: 9pz5xiy008rpv2zjufcvo9b89kyuux4ul05hr9n6726vwevbet
   apiAddress: localhost:8080
   repositories:
-    - repoId: example
+    - repoId: pipecd-k8s-manifest-playground
       remote: https://github.com/GotoRen/pipecd-k8s-manifest-playground
       branch: main
   syncInterval: 1m
   platformProviders:
-    - name: example-kubernetes
+    - name: kubernetes-default
       type: KUBERNETES
       config:
         kubeConfigPath: /Users/ren/.kube/config

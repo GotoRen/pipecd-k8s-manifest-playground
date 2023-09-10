@@ -20,7 +20,7 @@
       "cloud_provider": "kubernetes-default",
       "platform_provider": "kubernetes-default",
       "labels": {
-        "env": "pipecd-local"
+        "env": "pipecd-playground"
       },
       "trigger": {
         "commit": {

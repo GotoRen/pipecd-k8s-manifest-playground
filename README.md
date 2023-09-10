@@ -1,8 +1,8 @@
 # pipecd-k8s-manifest-playground
 
-K8s manifest for testing PipeCD
+This repository is a Kubernetes manifest for testing PipeCD.
 
-## PipeCD / Piped config
+## PipeCD / Piped
 
 - https://github.com/pipe-cd/pipecd
 
@@ -11,6 +11,12 @@ K8s manifest for testing PipeCD
 ### Control Plane
 
 ```shell
+### Start running a Kubernetes cluster.
+$ make kind-up
+
+### Install the web dependencies module.
+$ make update/web-deps
+
 ### Install Control Plane into the local cluster.
 $ make run/pipecd
 
@@ -21,7 +27,7 @@ $ kubectl -n pipecd port-forward svc/pipecd 8080
 ### Data Plane
 
 ```shell
-### Starting piped.
+### Start running a piped.
 $ make run/piped CONFIG_FILE=piped.yaml INSECURE=true
 ```
 
@@ -34,13 +40,6 @@ $ make run/piped CONFIG_FILE=piped.yaml INSECURE=true
 | project  | quickstart   |
 | username | hello-pipecd |
 | password | hello-pipecd |
-
-### Project settig
-
-| Key         | Value                   |
-| :---------- | :---------------------- |
-| Name        | pipecd-playground       |
-| Description | Build and test locally. |
 
 ### MySQL
 
@@ -66,3 +65,10 @@ mysql> show tables;
 +----------------------+
 8 rows in set (0.00 sec)
 ```
+
+## Project settig
+
+| Key         | Value                   |
+| :---------- | :---------------------- |
+| Name        | pipecd-playground       |
+| Description | Build and test locally. |

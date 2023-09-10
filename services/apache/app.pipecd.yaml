@@ -3,7 +3,7 @@ kind: KubernetesApp
 spec:
   name: apache
   labels:
-    env: pipecd-local
+    env: pipecd-playground
   quickSync:
     prune: true
   input:
