@@ -55,12 +55,12 @@ mysql> show tables;
 | Tables_in_quickstart |
 +----------------------+
 | APIKey               |
-| Application          |
-| Command              |
-| Deployment           |
+| Application          | // PipeCD アプリケーションマニフェスト（app.pipecd.yaml）を管理
+| Command              | // PipeCD に対するデプロイ命令（コマンド）の実行履歴を管理
+| Deployment           | // デプロイ履歴を管理
 | DeploymentChain      |
 | Event                |
-| Piped                | // piped-config マニフェストの情報を格納
+| Piped                | // Piped マニフェスト（pipd.yaml）の情報を管理
 | Project              |
 +----------------------+
 8 rows in set (0.00 sec)
