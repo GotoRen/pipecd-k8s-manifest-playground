@@ -1,3 +1,5 @@
+返信が遅くなってしまいすみません。
+
 # pipecd-k8s-manifest-playground
 
 This repository is a Kubernetes manifest for testing PipeCD.
@@ -66,9 +68,19 @@ mysql> show tables;
 8 rows in set (0.00 sec)
 ```
 
-## Project settig
+## Project setting
 
 | Key         | Value                   |
 | :---------- | :---------------------- |
 | Name        | pipecd-playground       |
 | Description | Build and test locally. |
+
+## PipeCD Web UI
+
+### nginx
+
+![nginx](https://github.com/GotoRen/pipecd-k8s-manifest-playground/assets/63791288/79e54f38-8ba6-4a46-b438-07307c7f0dc2)
+
+### apache (httpd)
+
+![apache](https://github.com/GotoRen/pipecd-k8s-manifest-playground/assets/63791288/56dbeabc-027c-4087-8c6d-6b08c94346a5)
