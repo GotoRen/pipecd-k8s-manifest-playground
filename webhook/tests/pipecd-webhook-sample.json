@@ -2,10 +2,10 @@
   "Type": 4,
   "Metadata": {
     "deployment": {
-      "id": "33ff32eb-4924-4d6a-b1b6-f581e399af87",
-      "application_id": "3272fc5f-ee51-4894-b5bb-0a02b3cf24e5",
-      "application_name": "nginx",
-      "piped_id": "6bd2b446-ef80-414a-9407-75561e924aa3",
+      "id": "ac507653-d553-4766-9774-abaebd8d231f",
+      "application_id": "ccdc54d6-66ec-46ba-9e20-35bec0bbfcb0",
+      "application_name": "apache",
+      "piped_id": "c76d43be-8776-4f76-82c4-d8899ebb71b7",
       "project_id": "quickstart",
       "git_path": {
         "repo": {
@@ -13,9 +13,9 @@
           "remote": "https://github.com/GotoRen/pipecd-k8s-manifest-playground",
           "branch": "main"
         },
-        "path": "services/nginx",
+        "path": "services/apache",
         "config_filename": "app.pipecd.yaml",
-        "url": "https://github.com/GotoRen/pipecd-k8s-manifest-playground/tree/main/services/nginx"
+        "url": "https://github.com/GotoRen/pipecd-k8s-manifest-playground/tree/main/services/apache"
       },
       "cloud_provider": "kubernetes-default",
       "platform_provider": "kubernetes-default",
@@ -24,18 +24,18 @@
       },
       "trigger": {
         "commit": {
-          "hash": "eeaf074dc187430018340ae2812ebc534a4d700f",
-          "message": "[Fix] kustomization namespace",
+          "hash": "829af8fbe280ebbec7ea2f58db531942538ad673",
+          "message": "update: httpd manifest",
           "author": "GotoRen",
           "branch": "main",
-          "url": "https://github.com/GotoRen/pipecd-k8s-manifest-playground/commit/eeaf074dc187430018340ae2812ebc534a4d700f",
-          "created_at": 1691935150
+          "url": "https://github.com/GotoRen/pipecd-k8s-manifest-playground/commit/829af8fbe280ebbec7ea2f58db531942538ad673",
+          "created_at": 1694325776
         },
-        "timestamp": 1691973397
+        "timestamp": 1694325828
       },
       "status_reason": "The deployment has been planned",
-      "created_at": 1691973397,
-      "updated_at": 1691973417
+      "created_at": 1694325828,
+      "updated_at": 1694325847
     }
   }
 }
