@@ -24,7 +24,7 @@ spec:
           - DEPLOYMENT_FAILED
           - DEPLOYMENT_CANCELLED
         labels:
-          env: playground
+          env: pipecd-playground
         receiver: pipecd-playground-webhook-receiver
     receivers:
       - name: pipecd-playground-webhook-receiver
